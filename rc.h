@@ -313,7 +313,7 @@ extern int printfmt(Format *, const char *);
 extern int fmtprint(Format *, const char *,...);
 extern void fmtappend(Format *, const char *, size_t);
 extern void fmtcat(Format *, const char *);
-extern int fprint(int fd, const char *fmt,...);
+// extern int fprint(int fd, const char *fmt,...);
 extern char *mprint(const char *fmt,...);
 extern char *nprint(const char *fmt,...);
 /*
