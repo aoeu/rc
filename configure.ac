@@ -18,8 +18,9 @@ dnl If we're using gcc, specify `-Wall'.  I've also checked the code
 dnl with `-pedantic -W -Wall -Wpointer-arith -Wstrict-prototypes
 dnl -Wmissing-prototypes', and checked that all the warnings generated
 dnl are harmless.
+dnl Forcibly use static linking as well.
 case "$GCC" in
-yes) CFLAGS="-Wall $CFLAGS" ;;
+yes) CFLAGS="-Wall -static -static-libgcc -static-libstdc++ $CFLAGS" ;;
 esac
 
 AC_SYS_LARGEFILE
