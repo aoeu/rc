@@ -7,7 +7,7 @@ aclocal
 autoconf
 autoheader
 automake --add-missing
-./configure --with-edit=readline
+./configure --with-edit=readline --with-history
 sed -i 's#\(extern int fprint.*$\)#// \1#' rc.h
 make
 # to install: sudo make install
